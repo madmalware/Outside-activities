@@ -1,0 +1,36 @@
+programa {
+
+  // Criar um programa que diz se a pessoa pode tomar um remédio baseado nos pré-requesitos de idade do país correspondente.
+
+  funcao inicio() {
+    inteiro idade
+    cadeia pais
+
+    escreva("Qual o seu país?/What's your country?\nBR/POR/USA: ")
+    leia(pais)
+    limpa()
+
+    se (pais == "USA"){
+      escreva("Age: ")
+      leia(idade)
+    }
+    senao{
+      escreva("Idade: ")
+      leia(idade)
+    }
+    limpa()
+
+    se ((pais == "BR" e idade >= 18) ou (pais == "POR")){
+      escreva("Permitido.")
+    }
+    senao se (pais == "USA" e idade >= 21){
+      escreva("Allowed.")
+    }
+    senao se (pais == "USA" e idade < 21){
+      escreva("Not allowed.")
+    }
+    senao{
+      escreva("Não permitido.")
+    }
+  }
+}
