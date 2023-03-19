@@ -1,0 +1,15 @@
+programa {
+
+  //escreva um programa que leia uma quantidade de nomes usando o 'para'
+  
+  funcao inicio() {
+
+    cadeia nome[4]
+
+    para (inteiro i = 0; i <= 4; i++){
+      escreva("Escreva o nome que você deseja armazenar na posição ", i, ": \n")
+      leia(nome[i])
+    }
+    escreva(nome[1])
+  }
+}
